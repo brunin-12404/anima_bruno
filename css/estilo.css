@@ -1,0 +1,60 @@
+/* Palhetas de cores do site */
+    :root {
+      --color-yellow: #FEDA18;
+      --color-pink: #FFD4D4;
+      --color-green: #BDD8A4;
+      --color-lilac: #E4D9DC;
+      --color-brown-light: #A07855;
+      --color-brown-dark: #5C4028;
+    }
+
+    /* styles das classes */
+    .bg-palette-yellow { background-color: var(--color-yellow) !important; }
+    .bg-palette-pink { background-color: var(--color-pink) !important; }
+    .bg-palette-green { background-color: var(--color-green) !important; }
+    .bg-palette-lilac { background-color: var(--color-lilac) !important; }
+    .bg-palette-brown { background-color: var(--color-brown-light) !important; }
+    .bg-palette-brown-dark { background-color: var(--color-brown-dark) !important; }
+
+    .text-palette-brown-dark { color: var(--color-brown-dark) !important; }
+    .text-palette-brown-light { color: var(--color-brown-light) !important; }
+
+    .border-palette-brown { border-color: var(--color-brown-light) !important; }
+
+    /* Layout & Styling Improvements */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .hero-banner {
+      background: linear-gradient(135deg, var(--color-lilac) 0%, var(--color-pink) 100%);
+    }
+
+    /* Botão do whatsapp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      background-color: #20ba5a;
+    }
+
+    /*estilização dos inputs da caixinha do formulario */
+    .form-control:focus {
+      border-color: var(--color-brown-light);
+      box-shadow: 0 0 0 0.25rem rgba(160, 120, 85, 0.25);
+    }

@@ -1,24 +1,281 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anima - Desenvolvimento e Psicologia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anima - Desenvolvimento e Psicologia</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="shortcut icon" href="img/Logo - preto.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav style="background-color: #bdd8a4;" class="navbar navbar-dark">
-        <div class="container">
-            <a href="index.html"><img src="img/Sublogo.jpg" height="50" alt="">ANIMA</a> 
-            <ul>
-                <li class="nav-item"><a href="#servicos">SERVIÇOS</a></li>
-                <li class="nav-item"><a href=""></a></li>
-                <li class="nav-item"><a href=""></a></li>
-            </ul>
+<body class="bg-light text-dark">
+
+  <!-- Aba do menu principal, na parte superior do site -->
+  <nav class="navbar navbar-expand bg-white border-bottom border-palette-brown sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-palette-brown-dark d-flex align-items-center gap-2" href="#">
+        
+        <span><a href="index.html"><img src="img/Logo - preto.png" height="70" alt=""> </a><b>ANIMA</b> - <small class="fw-normal text-muted fs-6"> Desenvolvimento e Psicologia</small></span>
+      </a>
+      
+      <div class="d-flex align-items-center gap-2 gap-sm-3 ms-auto">
+        <a class="nav-link fw-semibold text-palette-brown-dark d-none d-sm-inline" href="#inicio">Início</a>
+        <a class="nav-link fw-semibold text-palette-brown-dark d-none d-sm-inline" href="#sobre">Sobre</a>
+        <a class="btn bg-palette-brown text-white rounded-pill px-3 px-sm-4 fw-semibold" href="#servicos">Serviços</a>
+        <a class="nav-link fw-semibold text-palette-brown-dark d-none d-sm-inline" href="#contato">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="inicio" class="hero-banner py-5">
+    <div class="container py-4 text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <span class="badge bg-palette-yellow text-dark mb-3 px-3 py-2 rounded-pill fs-6 border border-dark">
+            Saúde Mental & Qualidade de Vida
+          </span>
+          <h1 class="display-5 fw-bold text-palette-brown-dark mb-3">
+            Cuidamos de pessoas e organizações com ciência e sensibilidade.
+          </h1>
+          <p class="lead text-dark mb-4 max-w-75 mx-auto">
+            <strong>Anima</strong> um espaço em São Gonçalo do Rio Abaixo dedicado ao seu bem-estar!
+          </p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#servicos" class="btn bg-palette-yellow text-dark fw-bold rounded-pill px-4 py-2 border border-dark">
+              Agende Sua Consulta
+            </a>
+            <a href="#contato" class="btn border-palette-brown text-palette-brown-dark fw-semibold rounded-pill px-4 py-2 bg-white">
+              Fale Conosco
+            </a>
+          </div>
         </div>
-    </nav>
-    <div id="teste" style="height: 2800px; background-color: e4d9dc;">TESTE</div>
-    <div id="servicos">teste</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-5">
     
+    <!-- Proposta e Missão -->
+    <section id="sobre" class="mb-5">
+      <div class="row g-4">
+        <!-- Apresentação da Empresa -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 bg-palette-green p-4">
+            <div class="card-body">
+              <h2 class="h3 fw-bold text-palette-brown-dark mb-3 d-flex align-items-center gap-2">
+                
+                <img src="img/4.png" height="50" alt="">Sobre a Anima
+              </h2>
+              <p class="card-text text-dark">
+                Nossa proposta é promover soluções integradas em saúde mental, desenvolvimento humano e qualidade de vida. Atuamos tanto no âmbito pessoal quanto no contexto corporativo, estimulando ambientes acolhedores, empáticos e produtivos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Missão -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 bg-palette-lilac p-4">
+            <div class="card-body">
+              <h2 class="h3 fw-bold text-palette-brown-dark mb-3 d-flex align-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+                </svg>
+                Nossa Missão
+              </h2>
+              <blockquote class="blockquote mb-0 fs-6 text-palette-brown-dark fst-italic">
+                "Oferecer um cuidado psicológico ético, humano e baseado na ciência, auxiliando no desenvolvimento emocional e na construção de uma vida mais equilibrada e consciente."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-4">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold text-palette-brown-dark">Nossos Serviços</h2>
+        <p class="text-muted">Acompanhamento e suporte especializado para pessoas e organizações</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 - Psicoterapia individual -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm rounded-4 bg-white p-3 text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="rounded-circle bg-palette-pink p-3 mb-3 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="var(--color-brown-dark)" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4"/>
+                </svg>
+              </div>
+              <h3 class="h5 fw-bold text-palette-brown-dark mb-2">Psicoterapia Individual</h3>
+              <p class="text-muted small card-text">
+                Atendimento clínico individualizado, promovendo autoconhecimento, inteligência emocional e suporte diante das demandas da vida.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 - Consultorias para organizações -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm rounded-4 bg-white p-3 text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="rounded-circle bg-palette-yellow p-3 mb-3 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="var(--color-brown-dark)" viewBox="0 0 16 16">
+                  <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm0 1h12v12H2z"/>
+                  <path d="M4 4h3v3H4zm5 0h3v3H9zm-5 5h3v3H4zm5 0h3v3H9z"/>
+                </svg>
+              </div>
+              <h3 class="h5 fw-bold text-palette-brown-dark mb-2">Consultorias Organizacionais</h3>
+              <p class="text-muted small card-text">
+                Atuação direcionada para organizações conforme diretrizes da <strong>NR-01</strong>, com foco na gestão de riscos psicossociais.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 - Avaliação psicológica -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm rounded-4 bg-white p-3 text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="rounded-circle bg-palette-green p-3 mb-3 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="var(--color-brown-dark)" viewBox="0 0 16 16">
+                  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                  <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                </svg>
+              </div>
+              <h3 class="h5 fw-bold text-palette-brown-dark mb-2">Avaliação Psicológica</h3>
+              <p class="text-muted small card-text">
+                Investigação clínica rigorosa e fundamentada para compreensão do perfil psicológico, inteligência e aspectos da personalidade.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 - Campanhas e palestras educativas -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm rounded-4 bg-white p-3 text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h3 class="h5 fw-bold text-palette-brown-dark mb-2"> <img src="img/5.png" height="50" alt="">Campanhas e Palestras</h3>
+              <p class="text-muted small card-text">
+                Ações educativas dinâmicas sobre saúde mental, prevenção do esgotamento emocional e desenvolvimento pessoal e profissional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explicação para preencher o formulario abaixo -->
+    <section id="contato" class="py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow rounded-4 p-4 p-md-5 bg-white">
+            <div class="card-body">
+              <div class="text-center mb-4">
+                <h2 class="h3 fw-bold text-palette-brown-dark">Entre em Contato</h2>
+                <p class="text-muted">Preencha os campos abaixo para solicitar atendimento ou tirar suas dúvidas.</p>
+              </div>
+
+              <!-- Formulario para preenchimento -->
+              <form action="#" method="POST">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label fw-semibold">Nome</label>
+                    <input type="text" class="form-control rounded-3 py-2" id="nome" name="nome" placeholder="Seu nome completo" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label fw-semibold">E-mail</label>
+                    <input type="email" class="form-control rounded-3 py-2" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="telefone" class="form-label fw-semibold">Telefone</label>
+                    <input type="tel" class="form-control rounded-3 py-2" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label fw-semibold">Mensagem</label>
+                    <textarea class="form-control rounded-3" id="mensagem" name="mensagem" rows="4" placeholder="Como podemos te ajudar?" required></textarea>
+                  </div>
+
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn bg-palette-brown text-white w-100 py-3 rounded-pill fw-bold">
+                      Enviar Mensagem
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-palette-brown-dark text-white py-5 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Dados da Empresa -->
+        <div class="col-md-6">
+          <h3 class="h5 fw-bold text-palette-yellow mb-2">Anima - Desenvolvimento e Psicologia</h3>
+          <p class="small text-light opacity-75 mb-3">
+            Cuidamos de pessoas e organizações com ciência e sensibilidade.
+          </p>
+          <div class="d-inline-block bg-palette-yellow text-dark px-3 py-1 rounded-pill small fw-bold">
+            CRP: 04/78609. - Registro Profissional
+          </div>
+        </div>
+
+        <!-- Informações de Contato -->
+        <div class="col-md-6 text-md-end">
+          <h4 class="h6 fw-bold text-palette-yellow mb-3">Informações de Contato</h4>
+          <p class="small mb-2 d-flex align-items-center justify-content-md-end gap-2">
+            <!-- Telefone no rodapé-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-yellow)" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/>
+            </svg>
+            <span>Telefone/WhatsApp: (31) 97334-5419</span>
+          </p>
+          <p class="small mb-0 d-flex align-items-center justify-content-md-end gap-2">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-yellow)" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+            </svg>
+            <span>E-mail: animadesenvolvimentopsicologia@gmail.com</span>
+          </p>
+          <!-- instagram no rodapé -->
+            <span>Instagram: @anima_desenvolvimento</span>
+          </p>
+        </div>
+      </div>
+
+      <hr class="my-4 border-light opacity-25">
+
+      <div class="text-center small text-light opacity-50">
+        &copy; 2026 Anima - Desenvolvimento e Psicologia. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp (SVG Inline) -->
+  <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Anima." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Conversar no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#FFFFFF" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.57 6.57 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.17-.478 1.338-.94.165-.464.165-.858.116-.94-.05-.083-.182-.133-.379-.232"/>
+    </svg>
+  </a>
+
 </body>
 </html>
